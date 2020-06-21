@@ -1,0 +1,10 @@
+.x-close {
+	padding: 3px 10px;
+	font-size: 1.3rem;
+	color: #706767;
+	background-color: rgba(230, 219, 219, 0.93);
+
+	&:hover {
+		cursor: pointer;
+	}
+}
