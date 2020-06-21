@@ -1,0 +1,83 @@
+.carousel {
+	&__btn-right-container--tall,
+	&__btn-left-container--tall {
+		position: relative;
+		display: grid;
+		width: 65px;
+	}
+
+	&__btn-right--tall {
+		margin: auto;
+		margin-right: 0px;
+		fill: #a27d3a;
+		transition: background-color 0.125s;
+		border-radius: 50%;
+		background-color: #3e3e3e;
+	}
+
+	&__btn-left--tall {
+		position: relative;
+		margin: auto;
+		margin-left: 0px;
+		border-radius: 50%;
+		fill: #a27d3a;
+		transition: background-color 0.125s;
+		background-color: #3e3e3e;
+	}
+
+	&__btn-left--tall:hover,
+	&__btn-right--tall:hover {
+		fill: #a27d3a;
+		cursor: pointer;
+		transition: fill 0.07s ease-out, background-color 0.07s ease-out;
+		background-color: #332e2e;
+	}
+
+	//Regular sized crsl btns
+	&__btn-right-container {
+		position: absolute;
+		right: -70px;
+		top: 6.5rem;
+		display: flex;
+		justify-content: right;
+		align-items: center;
+		height: 36px;
+		width: 40px;
+		margin-top: 8px;
+	}
+
+	&__btn-right {
+		height: 36px;
+		width: 60px;
+		z-index: 2;
+		clip-path: polygon(0 0, 50% 50%, 0 100%, 0 80%, 30% 50%, 0 20%);
+		transition: background-color 0.125s;
+		background-color: rgb(117, 85, 85);
+	}
+
+	&__btn-left-container {
+		position: absolute;
+		left: -65px;
+		top: 6.5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 36px;
+		width: 40px;
+		margin-top: 8px;
+	}
+
+	&__btn-left {
+		height: 36px;
+		width: 60px;
+		z-index: 2;
+		clip-path: polygon(100% 20%, 70% 50%, 100% 80%, 100% 100%, 50% 50%, 100% 0);
+		background-color: rgb(117, 85, 85);
+	}
+
+	&__btn-left:hover,
+	&__btn-right:hover {
+		cursor: pointer;
+		background-color: rgb(0, 0, 0);
+	}
+}
