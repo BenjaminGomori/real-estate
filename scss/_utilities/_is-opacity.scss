@@ -1,0 +1,8 @@
+.is-opacity {
+	opacity: 0.25;
+
+	&:hover {
+		opacity: 0.25 !important;
+		cursor: default !important;
+	}
+}
