@@ -1,0 +1,21 @@
+.carousel__slide {
+	display: grid;
+	grid-auto-flow: column;
+	justify-content: start;
+	transition: transform 0.4s ease-out;
+
+	&__wrap {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	@media (max-width: 735px) {
+		display: block;
+		margin-bottom: 2rem;
+
+		&__wrap {
+			display: block;
+			margin-bottom: 2rem;
+		}
+	}
+}
