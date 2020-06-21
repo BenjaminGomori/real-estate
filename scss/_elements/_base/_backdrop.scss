@@ -1,0 +1,12 @@
+.backdrop {
+	position: fixed;
+	z-index: 10;
+	height: 100%;
+	width: 100vw;
+	visibility: hidden;
+	background-color: rgba(96, 96, 96, 0.92);
+
+	&:hover {
+		cursor: pointer;
+	}
+}
