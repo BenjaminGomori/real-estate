@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600&display=swap');
+.grid-modal {
+	position: fixed;
+	top: 4vh;
+	left: 17vw;
+	display: grid;
+	grid-template-columns: 15rem 35rem;
+	grid-template-rows: 22rem 14rem;
+	grid-template-areas:
+		'side-bar slide'
+		'side-bar thumbnail';
+	overflow: hidden;
+	z-index: 13;
+	visibility: hidden;
+	letter-spacing: 1.4px;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: #ffffff;
+
+	&__side-bar {
+		grid-area: side-bar;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		padding: 0.5rem;
+		font-weight: 600;
+		color: white;
+		background-color: #413d3d;
+
+		&__aprt-information {
+			padding: 2rem 1rem 0rem 1rem;
+
+			p {
+				margin: 8px 0px;
+				font-size: 1.2rem;
+			}
+		}
+
+		&__broker-information {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			overflow: hidden;
+			width: 100%;
+			height: 15rem;
+			object-fit: cover;
+			border-radius: 5%;
+			margin-bottom: 0;
+			padding-top: 1rem;
+			text-align: center;
+			color: #463d3d;
+			background-color: #cecece;
+
+			p {
+				font-family: 'Josefin Sans', sans-serif;
+				font-size: 1.1rem;
+			}
+
+			&__img {
+				height: 10rem;
+				width: 100%;
+				object-fit: fill;
+			}
+		}
+
+		&__aprt-information {
+			margin: 2rem 0px;
+		}
+	}
+
+	&__slide {
+		grid-area: slide;
+		display: fixed;
+		margin: auto;
+	}
+
+	&__thumbnail {
+		grid-area: thumbnail;
+		overflow-y: auto;
+		padding: 0.5rem;
+		background-color: rgba(200, 196, 196, 0.7);
+	}
+
+	&__close {
+		position: absolute;
+		top: 0px;
+		right: 0px;
+	}
+}
