@@ -1,0 +1,36 @@
+.about {
+	padding-top: 3rem;
+
+	&__content {
+		display: -ms-grid;
+		display: grid;
+		justify-items: center;
+		width: 90vw;
+		max-width: 700px;
+		margin: auto;
+		padding: 3rem;
+		font-size: 1.5rem;
+		color: #4a4545;
+
+		@media (max-width: 540px) {
+			width: 96vw;
+		}
+		@media (max-width: 400px) {
+			width: 100vw;
+			padding: 5px;
+		}
+	}
+
+	&__phone,
+	&__email {
+		padding-top: 4rem;
+		font-variant: small-caps;
+		font-weight: bold;
+		font-size: 1.2rem;
+		color: #754f0a;
+	}
+
+	&__email {
+		padding-top: 0.3rem;
+	}
+}
