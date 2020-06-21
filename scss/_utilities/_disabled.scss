@@ -1,0 +1,9 @@
+.disabled {
+	background-color: #393939 !important;
+	pointer-events: none;
+	color: #a27d3a !important;
+	&:hover {
+		cursor: default !important;
+		background-color: #393939 !important;
+	}
+}
