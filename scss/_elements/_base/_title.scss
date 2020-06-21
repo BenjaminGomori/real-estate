@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700&display=swap');
+
+.title {
+	line-height: 4rem;
+	font-size: 4rem;
+	letter-spacing: 6px;
+	font-family: 'Libre Baskerville', serif;
+	color: #a27d3a;
+
+	@media (max-width: 1250px) {
+		line-height: 3.5rem;
+		font-size: 3.5rem;
+	}
+
+	@media (max-width: 870px) {
+		line-height: 3rem;
+		font-size: 3rem;
+	}
+
+	@media (max-width: 735px) {
+		line-height: 2.4rem;
+		font-size: 2.4rem;
+	}
+	@media (max-width: 650px) {
+		line-height: 2rem;
+		font-size: 2rem;
+	}
+
+	@media (max-width: 360px) {
+		padding-bottom: 0.4rem;
+		line-height: 1.6rem;
+		font-size: 1.6rem;
+	}
+}
