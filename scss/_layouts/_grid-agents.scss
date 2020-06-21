@@ -1,0 +1,39 @@
+.grid-agents {
+	display: grid;
+	grid-template-rows: 8rem 1fr 4.5rem;
+	row-gap: 2rem;
+	grid-template-areas:
+		'header '
+		'content'
+		'footer';
+	min-height: 100%;
+	background-color: #afa5a5;
+
+	&__header {
+		position: fixed;
+		top: 0px;
+		left: 0px;
+		z-index: 2;
+		height: 8rem;
+		width: 100%;
+	}
+
+	&__content {
+		grid-area: content;
+		display: grid;
+		grid-column-gap: 3rem;
+		grid-template-rows: max-content;
+		padding-top: 3rem;
+		grid-auto-flow: column;
+		margin: auto;
+
+		@media (max-width: 1000px) {
+			display: block;
+			text-align: center;
+		}
+	}
+
+	&__footer {
+		grid-area: footer;
+	}
+}
