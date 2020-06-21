@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,600&display=swap');
+.nav {
+	display: grid;
+	grid-auto-flow: column;
+	column-gap: 4px;
+	height: 2rem;
+	padding-top: 2px;
+	font-family: 'Josefin Sans', sans-serif;
+	background-color: rgb(75, 75, 75);
+
+	@media (max-width: 735px) {
+		justify-content: end;
+		column-gap: 3px;
+		width: 100vw;
+		padding-top: 0px;
+		background-color: #463737;
+	}
+
+	&__link {
+		display: inline-block;
+		padding: 4px 15px;
+		letter-spacing: 1px;
+		color: #e8e8e8;
+		background-color: #665d5d;
+
+		&:hover {
+			cursor: pointer;
+			transition: background-color 0.2s;
+			background-color: #807373;
+		}
+
+		@media (max-width: 735px) {
+			height: 2rem;
+		}
+	}
+}
