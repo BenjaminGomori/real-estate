@@ -1,0 +1,70 @@
+.carousel__card {
+	flex-shrink: 0;
+	height: 20rem;
+	width: 17rem;
+	overflow: hidden;
+	margin-top: 1rem;
+	margin-right: 1.25rem;
+	border: 4px #ffffff solid;
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none; /* Safari */
+	-khtml-user-select: none; /* Konqueror HTML */
+	-moz-user-select: none; /* Old versions of Firefox */
+	-ms-user-select: none; /* Internet Explorer/Edge */
+	user-select: none;
+	text-align: center;
+	background-color: #313131;
+
+	&:hover {
+		cursor: pointer;
+		transition: background-color 0.22s ease-out, border 0.22s ease-out;
+		border: 4px #332e2e solid;
+		background-color: #332e2e;
+	}
+
+	@media (max-width: 735px) {
+		display: block;
+		margin: 1rem auto;
+	}
+
+	&__image {
+		height: 60%;
+		width: 100%;
+		margin-bottom: 1.2rem;
+		object-fit: cover;
+		color: white;
+	}
+
+	&__p {
+		margin: 0.4rem;
+		font-weight: 400;
+		font-size: 1rem;
+		color: white;
+	}
+
+	&__image--no-data {
+		z-index: 4;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+		color: white;
+	}
+}
+
+.carousel__slide-b {
+	flex-shrink: 0;
+	height: 18rem;
+	width: 28rem;
+	margin: 0.5rem;
+	margin-left: 0.25rem;
+	margin-right: 1rem;
+	text-align: center;
+
+	&__image--no-data {
+		z-index: 4;
+		height: 100%;
+		width: 100%;
+		object-fit: contain; //b
+		color: white;
+	}
+}
