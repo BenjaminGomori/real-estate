@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<title>JREstate - Neighborhoods</title>
+		<link rel="stylesheet" href="scss/main.css" />
+		<link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
+		<script
+			src="./src/components/neighborhoods/NeighborhoodsPage.js"
+			type="module"
+			defer
+		></script>
+	</head>
+
+	<body>
+		<div class="grid-main">
+			<template id="tmpl-btn-left">
+				<svg
+					class="svg-btn-left carousel__btn-left--tall"
+					height="55"
+					width="55"
+				>
+					<polyline
+						class="polyline"
+						points="35 13, 8 28, 35 43, 35 35, 20 28, 35 20, 35 13, 8 28"
+					/>
+					<line
+						class="line"
+						x1="22"
+						x2="33"
+						y1="27.5"
+						y2="27.5"
+						style="background-color: #aaa3a3; stroke: #a27d3a; stroke-width: 2;"
+					/>
+					Sorry, your browser does not support inline SVG.
+				</svg>
+			</template>
+			<template id="tmpl-btn-right">
+				<svg
+					class="svg-btn-right carousel__btn-right--tall"
+					height="55"
+					width="55"
+				>
+					<polyline
+						class="polyline"
+						points="20 42, 47 27, 20 12, 20 20, 35 27, 20 35, 20 42, 43 27"
+					/>
+					<line
+						class="line"
+						x1="22"
+						x2="33"
+						y1="27.5"
+						y2="27.5"
+						style="background-color: #aaa3a3; stroke: #a27d3a; stroke-width: 2;"
+					/>
+					Sorry, your browser does not support inline SVG.
+				</svg>
+			</template>
+
+			<div class="backdrop"></div>
+			<div class="grid-modal">
+				<span class="grid-modal__close x-close">X</span>
+
+				<div class="grid-modal__side-bar"></div>
+
+				<div class="grid-modal__slide">
+					<div class="carousel__slide-b no-hover">
+						<img class="carousel__slide-b__image--no-data" src="" />
+					</div>
+				</div>
+				<div class="grid-modal__thumbnail"></div>
+			</div>
+
+			<header class="grid-main__header">
+				<div class="header">
+					<img
+						class="header__logo"
+						src="./images/logo/AhituvHouses_logo.png"
+						alt="logo"
+					/>
+					<div class="header__title">
+						<p class="title">Ahituv Properties</p>
+					</div>
+					<nav class="header__nav">
+						<ul class="nav">
+							<il class="nav__item">
+								<a href="index.html" class="nav__link disabled">Properties</a>
+							</il>
+							<il class="nav__item">
+								<a href="agents.html" class="nav__link">Agents</a>
+							</il>
+							<il class="nav__item"
+								><a href="about.html" class="nav__link">About</a></il
+							>
+						</ul>
+					</nav>
+				</div>
+			</header>
+
+			<div class="grid-main__side-bar">
+				<div class="filter-neighborhoods"></div>
+			</div>
+
+			<main class="grid-main__content">
+				<div class="neighborhoods-container">
+					<div class="spinner"></div>
+				</div>
+			</main>
+
+			<footer class="grid-main__footer footer">
+				<p class="footer__p">44 Rose Street, Jerusalem</p>
+				<p class="footer__p">ahituvproperties@gg.il</p>
+			</footer>
+		</div>
+	</body>
+</html>
