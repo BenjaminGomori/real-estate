@@ -1,0 +1,20 @@
+.footer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	background-color: #484646;
+
+	@media (max-width: 735px) {
+		flex-direction: column;
+	}
+
+	&__p {
+		margin-right: 2rem;
+		line-height: 2rem;
+		letter-spacing: 2px;
+		font-variant: small-caps;
+		font-size: 1.2rem;
+		color: #e2d9d9;
+	}
+}
