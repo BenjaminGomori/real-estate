@@ -1,0 +1,12 @@
+.disabled-svg {
+	fill: #dad7d7 !important;
+	background-color: #3e3e3e !important;
+	transition: background-color 0s!important, fill 0s !important;
+
+	&:hover {
+		// background-color: #8e7e7e3d !important;
+		// fill: #8e7e7e !important;
+		background-color: #3e3e3e !important;
+		fill: #dac7c7 !important;
+	}
+}
